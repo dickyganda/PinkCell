@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class TrxIn extends Model
 {
     use HasFactory;
+
+    protected $table = 't_masuk';
+    protected $primaryKey = 'IdMasuk';
+    public $timestamps = false;
 }

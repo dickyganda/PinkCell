@@ -42,132 +42,33 @@
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
-                            {{-- <span class="right badge badge-danger">New</span> --}}
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item menu-open">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-database"></i>
-                        <p>
-                            Data Master
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/datapelanggan/index"
-                               class="nav-link {{ request()->is('datapelanggan/index') ? 'active' : ' ' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Master Pelanggan</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/datarekanan/index"
-                               class="nav-link {{ request()->is('datarekanan/index') ? 'active' : ' ' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Data Rekanan</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/databarang/index"
-                               class="nav-link {{ request()->is('databarang/index') ? 'active' : ' ' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Data Barang</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/dataharga/index"
-                               class="nav-link {{ request()->is('dataharga/index') ? 'active' : ' ' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>History Harga</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/datauser/index"
-                               class="nav-link {{ request()->is('datauser/index') ? 'active' : ' ' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Data User</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="/transaksipenjualan/index"
-                       class="nav-link {{ request()->is('transaksipenjualan/index') ? 'active' : ' ' }}">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            Transaksi Penjualan
-                            {{-- <span class="right badge badge-danger">New</span> --}}
-                        </p>
-                    </a>
-                </li>
-                {{-- <li class="nav-item">
-                    <a href="/transaksicuci/index" class="nav-link {{ (request()->is('transaksicuci/index')) ? 'active' : ' ' }}">
-            <i class="nav-icon fas fa-th"></i>
-            <p>
-                Transaksi Cuci
-            </p>
-            </a>
-            </li> --}}
-                <li class="nav-item">
-                    <a href="/closing/index" class="nav-link {{ request()->is('closing/index') ? 'active' : ' ' }}">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            Closing
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/transaksikas/index"
-                       class="nav-link {{ request()->is('transaksikas/index') ? 'active' : ' ' }}">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="/trxin/index" class="nav-link {{ request()->is('trxin/index') ? 'active' : ' ' }}">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Transaksi Kas
+                            Transaksi Masuk
                         </p>
                     </a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a href="/closing/index" class="nav-link {{ (request()->is('closing/index')) ? 'active' : ' ' }}">
-            <i class="nav-icon fas fa-th"></i>
-            <p>
-                Closing
-            </p>
-            </a>
-            </li> --}}
-                <li class="nav-item menu-open">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-database"></i>
+                <li class="nav-item">
+                    <a href="/stok/index" class="nav-link {{ request()->is('stok/index') ? 'active' : ' ' }}">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Report
-                            <i class="right fas fa-angle-left"></i>
+                            Stok
                         </p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/report/index"
-                               class="nav-link {{ request()->is('report/index') ? 'active' : ' ' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Report Penjualan</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/report/cuci"
-                               class="nav-link {{ request()->is('report/cuci') ? 'active' : ' ' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Report Cuci</p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
-                {{-- <li class="nav-item">
-                    <a href="/report/index" class="nav-link {{ request()->is('report/index') ? 'active' : ' ' }}">
-            <i class="nav-icon fas fa-th"></i>
-            <p>
-                Report
-            </p>
-            </a>
-            </li> --}}
+                <li class="nav-item">
+                    <a href="/trxout/index" class="nav-link {{ request()->is('trxout/index') ? 'active' : ' ' }}">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Transaksi Keluar
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
